@@ -1,0 +1,59 @@
+page {
+    min-height: 100%;
+}
+
+.img {
+    min-height: 100%;
+    padding-top: 13rem;
+}
+
+.img image {
+    width: 100%;
+}
+
+.formbox {
+    padding: 1.5rem 0;
+    width: 86%;
+    margin: 0 auto;
+}
+
+.formbox input {
+    height: 44px;
+    line-height: 44px;
+    font-size: 0.75rem;
+    background: #fff;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.formbox textarea {
+    font-size: 0.75rem;
+    background: #fff;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.formbox button {
+    height: 44px;
+    line-height: 44px;
+    font-size: 0.875rem;
+    background: #34b6fd;
+    color: #fff;
+    border-radius: 0;
+}
+
+.formwarn {
+    font-size: 0.75rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6rem;
+    background: #f00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

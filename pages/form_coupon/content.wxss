@@ -1,0 +1,23 @@
+.art_cc {
+    color: #8b8b8a;
+    font-size: 0.875rem;
+    line-height: 1.6rem;
+}
+
+.art_cc image {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.art_tt {
+    color: #000;
+    font-size: 1rem;
+}
+
+.art_time {
+    font-size: 0.75rem;
+}
+
+.art_ccbox {
+    padding-bottom: 20px;
+}

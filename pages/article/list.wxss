@@ -1,0 +1,35 @@
+.index_article .oh {
+    border-bottom: 1px solid #cecece;
+}
+
+.index_article .oh:first-child {
+    border-top: 1px solid #cecece;
+}
+
+.index_article {
+    line-height: 1.3rem;
+}
+
+.index_a_img {
+    width: 30%;
+    height: 3.9rem;
+}
+
+.index_article .fr {
+    width: 68%;
+}
+
+.index_a_tt {
+    font-size: 0.875rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+}
+
+.index_a_cc {
+    font-size: 0.75rem;
+    color: #a4a4a4;
+    max-height: 2.6rem;
+    overflow: hidden;
+}

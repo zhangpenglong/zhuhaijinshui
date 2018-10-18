@@ -1,0 +1,32 @@
+@import "../templates/banner/banner.wxss";
+
+.index_tt {
+    font-size: 0.875rem;
+    line-height: 2rem;
+    color: #737272;
+}
+
+.loca_tips {
+    font-size: 0.75rem;
+    color: #000;
+    padding-left: 1rem;
+    line-height: 1.5rem;
+    background: url(http://img.fadoudou.com/zhuangxiu01/icon_location.png) no-repeat left center;
+    background-size: auto 1.1rem;
+}
+
+.pagecc {
+    padding-bottom: 25px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    padding-top: 10px;
+}
+
+.pagebox_cc {
+    color: #8b8b8a;
+    font-size: 0.75rem;
+}
+
+.fontRed {
+    color: #df1818;
+}

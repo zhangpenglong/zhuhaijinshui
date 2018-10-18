@@ -1,0 +1,108 @@
+<view hidden="{{!configDatas.topPic}}">
+    <!-- <image bindtap="mekecall" src="{{imgPre}}{{configDatas.topPic}}" style="height:100rpx;width:100%"></image> -->
+</view>
+<include src="../templates/banner/banner.wxml"></include>
+<view class="flex navbox bgfff mt10 mb10 tac">
+    <navigator class="navitem" url="../chuanglian/content">
+        <image src="{{imgPre}}{{configDatas['functionConfig'][0]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][0]['txt']}}</text>
+    </navigator>
+    <navigator class="navitem" url="../case/content">
+        <image src="{{imgPre}}{{configDatas['functionConfig'][1]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][1]['txt']}}</text>
+    </navigator>
+    <navigator class="navitem" url="../form_coupon/form_coupon?record_type=3&title={{configDatas['functionConfig'][2]['txt']}}">
+        <image src="{{imgPre}}{{configDatas['functionConfig'][2]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][2]['txt']}}</text>
+    </navigator>
+    <!-- <button class="navitem" openType="contact">
+        <image src="{{imgPre}}{{configDatas['functionConfig'][3]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][3]['txt']}}</text>
+    </button> -->
+
+     <navigator class="navitem" url="../page/page">
+        <image src="{{imgPre}}{{configDatas['functionConfig'][3]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][3]['txt']}}</text>
+    </navigator>
+    <navigator class="navitem"  bindtap="mekecall">
+        <image src="{{imgPre}}{{configDatas['functionConfig'][4]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][4]['txt']}}</text>
+    </navigator>
+     <navigator url="../hezuo/form_coupon?record_type=3&title={{configDatas['functionConfig'][2]['txt']}}" class="navitem">
+        <image src="{{imgPre}}{{configDatas['functionConfig'][5]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][5]['txt']}}</text>
+    </navigator>
+    
+     <navigator class="navitem" url="../xinfang/content">
+        <image src="{{imgPre}}{{configDatas['functionConfig'][6]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][6]['txt']}}</text>
+    </navigator>
+     <navigator class="navitem" url="../youhui/form_coupon?record_type=3&title={{configDatas['functionConfig'][2]['txt']}}">
+        <image src="{{imgPre}}{{configDatas['functionConfig'][7]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][7]['txt']}}</text>
+    </navigator>
+
+    <!-- <navigator class="navitem" url="../form_coupon/form_coupon?record_type=4&title={{configDatas['functionConfig'][6]['txt']}}">
+        <image src="{{configDatas['functionConfig'][6]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][6]['txt']}}</text>
+    </navigator>
+    <view bindtap="mekecall" class="navitem">
+        <image src="{{configDatas['functionConfig'][7]['pic']}}"></image>
+        <text>{{configDatas['functionConfig'][7]['txt']}}</text>
+    </view>
+</view>
+<view class="bgfff ptb10" hidden="{{!configDatas.videoConfig}}">
+    <video controls poster="{{imgPre}}{{configDatas.videoConfig.pic}}" src="{{configDatas.videoConfig.src}}" style="width:100%;height:425rpx;" wx:if="{{configDatas.videoConfig.style==0}}"></video>
+    <video controls poster="{{imgPre}}{{configDatas.videoConfig.pic}}" src="{{host}}{{configDatas.videoConfig.src}}" style="width:100%;height:425rpx;" wx:else></video>
+</view> -->
+<!-- <view class="flex imgbox bgfff ptb10 mb10">
+    <view bindtap="jumpThing" class="flexitem mr10" data-jumpId="{{configDatas['picConfig'][0]['jumpId']}}" data-jumpType="{{configDatas['picConfig'][0]['jumpType']}}">
+        <image mode="widthFix" src="{{imgPre}}{{configDatas['picConfig'][0]['pic']}}"></image>
+    </view>
+    <view bindtap="jumpThing" class="flexitem" data-jumpId="{{configDatas['picConfig'][1]['jumpId']}}" data-jumpType="{{configDatas['picConfig'][1]['jumpType']}}">
+        <image mode="widthFix" src="{{imgPre}}{{configDatas['picConfig'][1]['pic']}}"></image>
+    </view> -->
+</view>
+<view class="bgfff ptb10 mb10">
+    <view class="tt_index w">{{configDatas['functionConfig'][1]['txt']}}</view>
+    <view class="w flex index_case pt10">
+        <navigator url="../case/content?id={{item.id}}" wx:for="{{case}}" wx:key="id">
+            <view class="index_case_img">
+                <view style="background:url({{imgPre}}{{item}}) no-repeat center center;background-size:cover;"></view>
+            </view>
+            <view class="index_case_tt">{{item.title}}</view>
+        </navigator>
+    </view>
+    <navigator class="more tac" url="../case/content">查看更多></navigator>
+</view>
+<!-- <view bindtap="jumpThing" class="imgbox mb10" data-jumpId="{{configDatas['picConfig'][2]['jumpId']}}" data-jumpType="{{configDatas['picConfig'][2]['jumpType']}}">
+    <image mode="widthFix" src="{{imgPre}}{{configDatas['picConfig'][2]['pic']}}"></image>
+</view> -->
+<!-- <view class="bgfff ptb10">
+    <view class="tt_index w pb10">{{configDatas['functionConfig'][4]['txt']}}</view>
+    <view class="w index_article pb10">
+        <navigator class="oh ptb10" url="../article/content?id={{item.article_id}}" wx:for="{{article}}" wx:key="id">
+            <view class="index_a_img fl" style="background:url({{item.thumb}}) no-repeat center center;background-size:cover;"></view>
+            <view class="fr">
+                <view class="index_a_tt">{{item.title}}</view>
+                <view class="index_a_cc">{{item.summary}}</view>
+            </view>
+        </navigator>
+    </view>
+    <navigator class="more tac" url="../article/list">查看更多></navigator>
+</view> -->
+<image bindtap="mekecall" class="contact_us" src="../../images/contact_us.png"></image>
+<view class="pricepop flex" hidden="{{pricePopHide}}">
+    <image class="popimg" mode="widthFix" src="/images/pop_img.png"></image>
+    <navigator class="btn" url="../calculator/calculator">立即计算</navigator>
+    <image bindtap="pricePopClose" class="popclose" mode="widthFix" src="/images/pop_close.png"></image>
+</view>
+<view bindtap="pricePopShow" class="btn_form tac" hidden="{{priceButtonHide}}" style="position:fixed;left:89%;bottom:19%;">
+    <image mode="widthFix" src="/images/icon_calculate.png"></image>
+    <view></view>
+</view>
+<view bindtap="jumpThing" class="imgbox footer" data-jumpId="{{configDatas['picConfig'][3]['jumpId']}}" data-jumpType="{{configDatas['picConfig'][3]['jumpType']}}">
+    <!-- <image mode="widthFix" src="{{imgPre}}{{configDatas['picConfig'][3]['pic']}}"></image> -->
+</view>
+
+<map id="map" latitude="39.7660531109" longitude="116.4086329937" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>

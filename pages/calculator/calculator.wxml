@@ -1,0 +1,89 @@
+<view class="imgbox">
+    <image mode="widthFix" src="/images/calculator_img.png"></image>
+</view>
+<view class="pricebox p10 m10 imgbox">
+    <view class="pricebox_tt tac">
+        <text>你家的装修预算</text>
+    </view>
+    <image mode="widthFix" src="/images/calculator_num.gif" style="width:100%;"></image>
+    <view class="tac pricebox_tips">
+        <view>人工费：？元　　材料费：？元</view>
+        <view>设计费：？元　　质检费：？元</view>
+    </view>
+    <form bindsubmit="formSubmit">
+        <view class="flex inputbox">
+            <input class="flexitem" name="address" placeholder="请输入您所在小区(eg:济南市大舜天成)"></input>
+            <text></text>
+        </view>
+        <view class="flex inputbox">
+            <input class="flexitem" name="mianji" placeholder="请输入您的房屋面积" type="number"></input>
+            <text>㎡</text>
+        </view>
+        <view class="flex radiobox">
+            <view>装修方式：</view>
+            <radio-group bindchange="radioChange" class="radio-group flexitem flex" name="fangshi">
+                <label class="flexitem" wx:for="{{items}}" wx:key="id">
+                    <radio checked="{{item.checked}}" value="{{item.name}}"></radio>{{item.value}}
+                </label>
+            </radio-group>
+        </view>
+        <view class="flex inputbox o10">
+            <input class="flexitem" name="tel" placeholder="请输入手机号,报价结果发送到您的手机" type="number"></input>
+        </view>
+        <button class="btn" formType="submit">立即计算</button>
+    </form>
+</view>
+<view class="pricebox_ad imgbox">
+    <image mode="widthFix" src="/images/calculator_tt.png"></image>
+    <view class="pricebox_items">
+        <view class="item flex">
+            <image mode="widthFix" src="/images/calculator_tips_01.png"></image>
+            <view class="item_cc">
+                <view>省事儿</view>
+                <view>30秒发布设计需求</view>
+                <view>设计师上门量房设计</view>
+            </view>
+        </view>
+        <view class="item flex">
+            <view class="item_cc">
+                <view>省钱</view>
+                <view>十秒钟获取预算清单</view>
+                <view>实时精细帮助您做装修</view>
+            </view>
+            <image mode="widthFix" src="/images/calculator_tips_02.png"></image>
+        </view>
+        <view class="item flex">
+            <image mode="widthFix" src="/images/calculator_tips_03.png"></image>
+            <view class="item_cc">
+                <view>更懂你</view>
+                <view>多套设计方案实时共享</view>
+                <view>让您享受更懂生活的装修</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view>
+    <view class="pricebox_nav_tt tac">您还能获得以下<text>4项</text>免费服务</view>
+    <view class="pricebox_nav_box tac flex">
+        <view class="item" url="">
+            <image mode="widthFix" src="/images/calculator_nav_01.png"></image>
+            <view class="name">免费报价</view>
+            <text>费用这样花才合理</text>
+        </view>
+        <view class="item" url="">
+            <image mode="widthFix" src="/images/calculator_nav_02.png"></image>
+            <view class="name">免费量房</view>
+            <text>专业设计师上门免费量房</text>
+        </view>
+        <view class="item" url="">
+            <image mode="widthFix" src="/images/calculator_nav_03.png"></image>
+            <view class="name">免费设计</view>
+            <text>多套方案对比、更全面</text>
+        </view>
+        <view class="item" url="">
+            <image mode="widthFix" src="/images/calculator_nav_04.png"></image>
+            <view class="name">免费售后</view>
+            <text>装修费用更实惠</text>
+        </view>
+    </view>
+</view>

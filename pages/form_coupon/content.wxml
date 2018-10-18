@@ -1,0 +1,10 @@
+<view class="bgfff mt5 ptb10 mb10">
+    <view class="w art_cc">
+        <view class="art_tt">{{title}}</view>
+        <view class="art_time pb10 mt5">{{time}}</view>
+        <view class="art_ccbox">
+            <rich-text nodes="{{content}}"></rich-text>
+        </view>
+    </view>
+</view>
+<view class="teq tac"></view>

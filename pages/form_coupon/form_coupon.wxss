@@ -1,0 +1,27 @@
+.casebox image {
+    width: 100%;
+}
+
+.casebox navigator {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    line-height: 1.3rem;
+    color: #838484;
+}
+
+.casebox navigator text {
+    color: #05e1d9;
+}
+
+.casebox .tt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.casebox .cc {
+    max-height: 2.6rem;
+    overflow: hidden;
+}

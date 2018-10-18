@@ -1,0 +1,26 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/form/form",
+        "pages/form_coupon/form_coupon",
+        "pages/hezuo/form_coupon",
+        "pages/youhui/form_coupon",
+        "pages/form_coupon/content",
+        "pages/form_coupon/form_coupon02",
+        "pages/case/list",
+        "pages/case/content",
+        "pages/chuanglian/content",
+        "pages/page/page",
+        "pages/article/list",
+        "pages/article/content",
+        "pages/calculator/calculator",
+        "pages/chuanglian/list",
+        "pages/xinfang/content"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#e3161e",
+        "navigationBarTitleText": "北京豪利装饰",
+        "navigationBarTextStyle": "white"
+    }
+}

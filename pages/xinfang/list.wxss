@@ -1,0 +1,9 @@
+.casebox image {
+    width: 100%;
+}
+
+.casebox navigator {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}

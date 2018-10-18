@@ -1,0 +1,5 @@
+<swiper autoplay="true" class="bannerbox" duration="500" indicatorActiveColor="#fff" indicatorColor="#535353" indicatorDots="true" interval="5000" style="height:{{slidePicHeight}}px;">
+    <swiper-item wx:for="{{slidePic}}" wx:key="id">
+        <image bindtap="jumpThing" class="slide-image" data-jumpId="{{item.ext_datas.jumpId}}" data-jumpType="{{item.ext_datas.jumpType}}" mode="widthFix" src="{{imgPre}}{{item}}"></image>
+    </swiper-item>
+</swiper>

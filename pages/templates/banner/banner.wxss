@@ -1,0 +1,7 @@
+.bannerbox {
+    height: 10.0625rem;
+}
+
+.bannerbox image {
+    width: 100%;
+}

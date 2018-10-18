@@ -1,0 +1,189 @@
+@import "../templates/banner/banner.wxss";
+
+page {
+    padding-bottom: 3rem;
+}
+
+.index_tt {
+    font-size: 0.875rem;
+    line-height: 2rem;
+    color: #737272;
+}
+
+.loca_tips {
+    font-size: 0.75rem;
+    color: #000;
+    padding-left: 1rem;
+    line-height: 1.5rem;
+    background: url(http://img.fadoudou.com/zhuangxiu01/icon_location.png) no-repeat left center;
+    background-size: auto 1.1rem;
+}
+
+.imgbox image {
+    width: 100%;
+    display: block;
+}
+
+.navbox {
+    flex-wrap: wrap;
+}
+
+.navbox .navitem {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 0;
+    background: transparent;
+}
+
+.navbox button::after {
+    content: none;
+}
+
+.navbox .navitem image {
+    width: 2.6rem;
+    height: 2.6rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbox .navitem text {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 2rem;
+}
+
+.tt_index {
+    font-size: 0.875rem;
+}
+
+.index_case {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+.index_case navigator {
+    width: 49%;
+}
+
+.index_case .index_case_img {
+    border: 1px solid #e6e6e6;
+}
+
+.index_case .index_case_img view {
+    height: 5.9375rem;
+}
+
+.index_case .index_case_tt {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    max-height: 2.4rem;
+    overflow: hidden;
+}
+
+.more {
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 2.2rem;
+    background: #272936;
+    border-radius: 1.1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.index_article .oh {
+    border-bottom: 1px solid #cecece;
+}
+
+.index_article .oh:first-child {
+    border-top: 1px solid #cecece;
+}
+
+.index_article {
+    line-height: 1.3rem;
+}
+
+.index_a_img {
+    width: 30%;
+    height: 3.9rem;
+}
+
+.index_article .fr {
+    width: 68%;
+}
+
+.index_a_tt {
+    font-size: 0.875rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.index_a_cc {
+    font-size: 0.75rem;
+    color: #797979;
+    max-height: 2.6rem;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.contact_us {
+    position: fixed;
+    right: 0;
+    bottom: 12%;
+    width: 69.5px;
+    height: 34.5px;
+    z-index: 100;
+}
+
+.pricepop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricepop .popimg {
+    width: 75%;
+    margin-bottom: 0.8rem;
+}
+
+.pricepop .btn {
+    width: 48.75%;
+    background: #fff100;
+    height: 2.2rem;
+    border-radius: 1.1rem;
+    font-size: 1rem;
+    color: #361704;
+    line-height: 2.2rem;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 3px 0 0 #ffaa00;
+}
+
+.pricepop .popclose {
+    width: 8.125%;
+    margin-top: 1.4rem;
+}
+
+.btn_form {
+    font-size: 0.75rem;
+}
+
+.btn_form image {
+    width: 2rem;
+}

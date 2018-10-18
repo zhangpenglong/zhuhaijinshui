@@ -1,0 +1,15 @@
+<view class="img">
+    <image mode="widthFix" src="/images/coupon_img.png"></image>
+</view>
+<view class="coupon_tips tac">根据您的装修预算，为您打造最佳/最省钱装修方案</view>
+<view class="formbox">
+    <form>
+        <input placeholder="您的房屋面积" type="number"></input>
+        <input placeholder="手机号码" type="number"></input>
+        <input placeholder="装修预算" type="number"></input>
+        <textarea placeholder="请填写您的需求"></textarea>
+        <button bindtap="{{false?'typeok':'typewrong'}}" formType="submit">确认提交</button>
+    </form>
+</view>
+<view class="formwarn" hidden="{{warnhidden}}">填写错误!</view>
+<view class="teq tac">济南匠邦网络科技提供技术支持</view>

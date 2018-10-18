@@ -1,0 +1,12 @@
+<view class="bgfff pb10">
+    <view class="tt_h1 tac">{{title}}</view>
+</view>
+<view class="casebox">
+    <navigator class="bgfff p10 mb10" url="content?id={{item.id}}" wx:for="{{contentList}}" wx:key="id">
+        <image mode="widthFix" src="{{imgPre}}{{item.pic}}"></image>
+        <view class="tt">{{item.title}}</view>
+        <view class="cc">{{item.digest}}<text>>></text>
+        </view>
+    </navigator>
+</view>
+<view class="teq tac"></view>

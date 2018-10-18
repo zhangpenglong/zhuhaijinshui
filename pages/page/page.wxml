@@ -1,0 +1,17 @@
+<include src="../templates/banner/banner.wxml"></include>
+<view class="bgfff">
+    <view class="index_tt w">{{companyDatas.name}}</view>
+    <view bindtap="openMap" class="bdbox_tb">
+        <view class="w loca_tips">{{companyDatas.address}}</view>
+    </view>
+    <view class="w pagecc">
+        <view>联系电话：<text class="fontRed">{{companyDatas.tel}}</text>
+        </view>
+        <view>微 信 号：<text class="fontRed">{{companyDatas.wx_num}}</text>
+        </view>
+        <view>主营范围：{{companyDatas.special}}</view>
+        <view>公司介绍：</view>
+        <rich-text class="pagebox_cc" nodes="{{companyDatas.about}}"></rich-text>
+    </view>
+</view>
+<view class="teq tac"></view>

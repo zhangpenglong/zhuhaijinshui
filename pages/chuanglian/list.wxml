@@ -1,0 +1,10 @@
+<view class="mt5 mb10 bgfff ptb10">
+    <view class="tt_h1 tac">窗帘</view>
+    <view class="w casebox">
+        <navigator url="../case/content?id={{item.id}}" wx:for="{{caseList}}" wx:key="id">
+            <image mode="widthFix" src="{{imgPre}}{{item.picurl}}"></image>
+            <view>{{item.title}}</view>
+        </navigator>
+    </view> 
+</view>
+<view class="teq tac"></view>

@@ -1,0 +1,13 @@
+<view class="bgfff ptb10 mb10 mt5">
+    <view class="tt_h1 tac">{{configDatas['functionConfig'][4]['txt']}}</view>
+    <view class="w index_article pb10 mt10">
+        <navigator class="oh ptb10" url="../article/content?id={{item.article_id}}" wx:for="{{articleList}}" wx:key="article_id">
+            <view class="index_a_img fl" style="background:url({{item.thumb}}) no-repeat center center;background-size:cover;"></view>
+            <view class="fr">
+                <view class="index_a_tt">{{item.title}}</view>
+                <view class="index_a_cc">{{item.summary}}</view>
+            </view>
+        </navigator>
+    </view>
+</view>
+<view class="teq tac"></view>
