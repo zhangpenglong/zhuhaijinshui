@@ -6,7 +6,7 @@ var t = "", s = {
         tunnelUrl: "https://" + t + "/tunnel"
     },
     host: "https://" + t + "/",
-  imgPre: "http://haoli.drivecarai.com/"
+    imgPre: "http://pgsc7j8mv.bkt.clouddn.com/"
 };
 
 module.exports = s;

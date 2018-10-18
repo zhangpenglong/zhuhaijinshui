@@ -15,10 +15,10 @@ Page(i.extend({}, (t = {
         host: n.host,
         configDatas: a.globalData.configDatas,
         slidePicHeight: a.globalData.slidePicHeight,
-      slidePic: ['lunbo1.png', 'lunbo2.png', 'lunbo3.png', 'lunbo4.png', 'lunbo5.png', 'lunbo6.png',],
-      case: ['anli1.png', 'anli2.png', 'anli3.png', 'anli4.png',],
+      slidePic: ['lunbo1.png', 'lunbo2.png', 'lunbo3.png',],
+      case: ['anli1.jpg', 'anli2.jpg', 'anli3.jpg', 'anli4.jpg',],
         article: null,
-        tel: "18511508181",
+        tel: "15916283648",
         pricePopHide: 1,
         priceButtonHide: 1,
       markers: [{

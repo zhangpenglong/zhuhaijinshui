@@ -93,8 +93,8 @@ App({
         extConfig: null,
         configDatas: {
             functionConfig: [ {
-                txt: "窗帘",
-                pic: "chuanglian.png"
+                txt: "装修知识",
+                pic: "zhuangxiuzhishi.jpg"
             }, {
                 txt: "装修案例",
                 pic: "zhuangxiuanli.png"
@@ -106,7 +106,7 @@ App({
                 pic: "guanyuwomen.png"
             }, {
                 txt: "联系我们",
-                pic: "dianhua.png"
+                pic: "dianhua.jpg"
               }, {
                 txt: "合作伙伴",
                 pic: "hezuo.jpg"

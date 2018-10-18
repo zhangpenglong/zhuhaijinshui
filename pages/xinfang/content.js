@@ -3,7 +3,7 @@ var t = getApp(), e = require("../../config"), i = require("../../utils/util.js"
 Page(i.extend({}, {
     data: {
         imgPre: e.imgPre,
-      pic: ['xinfang1.jpg', 'xinfang2.jpg', 'xinfang3.jpg', 'xinfang4.jpg', 'xinfang5.jpg', 'xinfang6.jpg'],
+      pic: ['xinfang1.jpg', 'xinfang2.jpg', 'xinfang3.jpg', 'xinfang4.jpg', 'xinfang5.jpg'],
         title: null
     },
     // onLoad: function(e) {
