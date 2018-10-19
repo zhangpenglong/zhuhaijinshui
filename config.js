@@ -6,7 +6,9 @@ var t = "", s = {
         tunnelUrl: "https://" + t + "/tunnel"
     },
     host: "https://" + t + "/",
-    imgPre: "http://pgsc7j8mv.bkt.clouddn.com/"
+    imgPre: "http://zhuhai.drivecarai.com/",
+    latitude: parseFloat(22.2632584991),
+    longitude: parseFloat(113.5289812088),
 };
 
 module.exports = s;

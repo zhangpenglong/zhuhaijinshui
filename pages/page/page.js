@@ -1,4 +1,4 @@
-var a = getApp(), t = require("../../config.js");
+var a = getApp(), t = require("../../config.js"),n = require("../../config.js");
 
 Page({
     data: {
@@ -25,8 +25,8 @@ Page({
     },
     openMap: function() {
         wx.openLocation({
-          latitude: parseFloat(39.7660531109),
-          longitude: parseFloat(116.4086329937),
+          latitude: n.latitude,
+          longitude: n.longitude,
             scale: 28
         });
     },

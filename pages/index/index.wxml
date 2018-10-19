@@ -41,27 +41,6 @@
         <image src="{{imgPre}}{{configDatas['functionConfig'][7]['pic']}}"></image>
         <text>{{configDatas['functionConfig'][7]['txt']}}</text>
     </navigator>
-
-    <!-- <navigator class="navitem" url="../form_coupon/form_coupon?record_type=4&title={{configDatas['functionConfig'][6]['txt']}}">
-        <image src="{{configDatas['functionConfig'][6]['pic']}}"></image>
-        <text>{{configDatas['functionConfig'][6]['txt']}}</text>
-    </navigator>
-    <view bindtap="mekecall" class="navitem">
-        <image src="{{configDatas['functionConfig'][7]['pic']}}"></image>
-        <text>{{configDatas['functionConfig'][7]['txt']}}</text>
-    </view>
-</view>
-<view class="bgfff ptb10" hidden="{{!configDatas.videoConfig}}">
-    <video controls poster="{{imgPre}}{{configDatas.videoConfig.pic}}" src="{{configDatas.videoConfig.src}}" style="width:100%;height:425rpx;" wx:if="{{configDatas.videoConfig.style==0}}"></video>
-    <video controls poster="{{imgPre}}{{configDatas.videoConfig.pic}}" src="{{host}}{{configDatas.videoConfig.src}}" style="width:100%;height:425rpx;" wx:else></video>
-</view> -->
-<!-- <view class="flex imgbox bgfff ptb10 mb10">
-    <view bindtap="jumpThing" class="flexitem mr10" data-jumpId="{{configDatas['picConfig'][0]['jumpId']}}" data-jumpType="{{configDatas['picConfig'][0]['jumpType']}}">
-        <image mode="widthFix" src="{{imgPre}}{{configDatas['picConfig'][0]['pic']}}"></image>
-    </view>
-    <view bindtap="jumpThing" class="flexitem" data-jumpId="{{configDatas['picConfig'][1]['jumpId']}}" data-jumpType="{{configDatas['picConfig'][1]['jumpType']}}">
-        <image mode="widthFix" src="{{imgPre}}{{configDatas['picConfig'][1]['pic']}}"></image>
-    </view> -->
 </view>
 <view class="bgfff ptb10 mb10">
     <view class="tt_index w">{{configDatas['functionConfig'][1]['txt']}}</view>
@@ -75,22 +54,7 @@
     </view>
     <navigator class="more tac" url="../case/content">查看更多></navigator>
 </view>
-<!-- <view bindtap="jumpThing" class="imgbox mb10" data-jumpId="{{configDatas['picConfig'][2]['jumpId']}}" data-jumpType="{{configDatas['picConfig'][2]['jumpType']}}">
-    <image mode="widthFix" src="{{imgPre}}{{configDatas['picConfig'][2]['pic']}}"></image>
-</view> -->
-<!-- <view class="bgfff ptb10">
-    <view class="tt_index w pb10">{{configDatas['functionConfig'][4]['txt']}}</view>
-    <view class="w index_article pb10">
-        <navigator class="oh ptb10" url="../article/content?id={{item.article_id}}" wx:for="{{article}}" wx:key="id">
-            <view class="index_a_img fl" style="background:url({{item.thumb}}) no-repeat center center;background-size:cover;"></view>
-            <view class="fr">
-                <view class="index_a_tt">{{item.title}}</view>
-                <view class="index_a_cc">{{item.summary}}</view>
-            </view>
-        </navigator>
-    </view>
-    <navigator class="more tac" url="../article/list">查看更多></navigator>
-</view> -->
+
 <image bindtap="mekecall" class="contact_us" src="../../images/contact_us.png"></image>
 <view class="pricepop flex" hidden="{{pricePopHide}}">
     <image class="popimg" mode="widthFix" src="/images/pop_img.png"></image>
@@ -105,4 +69,4 @@
     <!-- <image mode="widthFix" src="{{imgPre}}{{configDatas['picConfig'][3]['pic']}}"></image> -->
 </view>
 
-<map id="map" latitude="39.7660531109" longitude="116.4086329937" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+<map id="map" latitude="{{latitude}}" longitude="{{longitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>

@@ -21,11 +21,13 @@ Page(i.extend({}, (t = {
         tel: "15916283648",
         pricePopHide: 1,
         priceButtonHide: 1,
+      latitude: n.latitude,
+      longitude: n.longitude,
       markers: [{
         iconPath: "/images/marker.png",
         id: 0,
-        latitude: 39.7660531109,
-        longitude: 116.4086329937,
+        latitude: n.latitude,
+        longitude: n.longitude,
         width: 22,
         height: 40
       }],
